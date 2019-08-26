@@ -7,7 +7,9 @@ $(document).ready(function(){
     event.preventDefault();
 
     var inputBBQ1 = parseInt($("#beepBoopQuestion1").val());
-    var outputBBR1 = 
+    var outputBBR1 =
+
+    $("#beepBoopResponse1").text(outputBBR1);ß
 
   });
 });
