@@ -1,13 +1,21 @@
 //Business Interface
-for (var i = 0; i < array.length; i++) {
-  array[i]
-}  if (i === 1)  {
-  return "beep";
-} else if (i === 2)  {
-  return "boop";
-} else if ( i === 3)  {
-  return "I'm sorry Dave, but I can't do that";
+
+function bB(userInput){
+  var bBArray = [];
+
+for (var i=0; i<=bBArray.length; i++){
+  if (i.toString().includes("3")){
+    bBArray.push("I'm sorry Dave, but I can't do that");
+} else if (i.toString().includes("2")){
+  bBArray.push("boop");
+} else if ( i.toString().includes("1")){
+  bBArray.push("beep");
+} else {
+  bBArray.push(""+ i);
+  }
 }
+return bBArray;
+};
 
 //User Interface
 $(document).ready(function(){
@@ -15,9 +23,8 @@ $(document).ready(function(){
     event.preventDefault();
 
     var inputBBQ1 = parseInt($("#beepBoopQuestion1").val());
-    var outputBBR1 =
+    var outputBBR1 = bB(userinput);
 
-    $("#beepBoopResponse1").text(outputBBR1);ß
-
+    $("#beepBoopResponse1").text(outputBBR1);
   });
 });
