@@ -7,5 +7,21 @@ body {
 }
 
 h1 {
+  color: orangered;
   text-align: center;
+}
+
+label {
+  color: purple;
+  text-align: left;
+}
+
+button {
+  color: dodgerblue;
+  text-align: left;
+}
+
+p {
+  color: hotpink;
+  text-align:
 }
