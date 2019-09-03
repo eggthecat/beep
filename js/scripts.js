@@ -1,30 +1,30 @@
-//Business Interface
+// Business Interface
+function compute(userInput){
+  var array1 = [];
 
-function bB(userInput){
-  var bBArray = [];
-
-for (var i=0; i<=bBArray.length; i++){
+for (var i=0; i<=userInput; i++){
   if (i.toString().includes("3")){
-    bBArray.push("I'm sorry Dave, but I can't do that");
+  array1.push("I'm sorry Dave, but I can't do that");
 } else if (i.toString().includes("2")){
-  bBArray.push("boop");
+  array1.push("boop");
 } else if ( i.toString().includes("1")){
-  bBArray.push("beep");
+  array1.push("beep");
 } else {
-  bBArray.push(""+ i);
+  array1.push(" " + i);
   }
 }
-return bBArray;
+return array1;
 };
 
 //User Interface
 $(document).ready(function(){
-  $("form#beepBoop").submit(function(event){
+  $("#input").submit(function(event){
     event.preventDefault();
 
-    var inputBBQ1 = parseInt($("#beepBoopQuestion1").val());
-    var outputBBR1 = bB(userinput);
+    var userInput = parseInt($("input#userNumber").val());
 
-    $("#beepBoopResponse1").text(outputBBR1);
+    var output = compute(userInput);
+
+    $(".result").text(output);
   });
 });
