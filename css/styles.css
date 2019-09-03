@@ -1,1 +1,11 @@
-HOLY HELL!
+body {
+  background-image: url(https://www.williamhenry.net/wp-content/uploads/2016/05/shemsu-1170x878.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+}
+
+h1 {
+  text-align: center;
+}
