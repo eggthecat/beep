@@ -10,18 +10,16 @@
   </head>
   <body>
     <div class="container">
-      <form id="beepBoop" action="index.html" method="post">
+      <form id="input">
         <div class="input">
-            <label for="">Please enter a numaric value between 1 through 100</label>
-            <input type="text" id="beepBoopQuestion1" value="">
+          <label for="">Enter a number between 0 through 101</label>
+          <input id="userNumber" type="number" min="1" max="100">
         </div>
         <button type="submit" name="btn">submit</button>
         <div class="output">
-          <p id="beepBoopResponse1"></p>
         </div>
       </form>
-
+      <p class="result"></p>
     </div>
-
   </body>
 </html>
